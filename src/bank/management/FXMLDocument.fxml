@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1228.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.management.FXMLDocumentController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1228.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.management.FXMLDocumentController">
    <left>
       <AnchorPane prefHeight="760.0" prefWidth="415.0" style="-fx-background-color: #130f40;" BorderPane.alignment="CENTER">
          <children>
@@ -34,12 +34,12 @@
             <JFXTextField fx:id="lastname" layoutX="458.0" layoutY="184.0" prefHeight="45.0" prefWidth="280.0" promptText="Last Name" />
             <JFXTextField fx:id="email" layoutX="118.0" layoutY="254.0" prefHeight="45.0" prefWidth="620.0" promptText="Email" />
             <JFXTextField fx:id="password" layoutX="118.0" layoutY="328.0" prefHeight="45.0" prefWidth="620.0" promptText="Password" />
-            <JFXButton fx:id="regist" layoutX="564.0" layoutY="656.0" prefHeight="51.0" prefWidth="198.0" text="Register" textFill="#130f40">
+            <JFXButton fx:id="regist" layoutX="564.0" layoutY="656.0" onAction="#Register" prefHeight="51.0" prefWidth="198.0" text="Register" textFill="#130f40">
                <font>
                   <Font name="Leelawadee Bold" size="26.0" />
                </font>
             </JFXButton>
-            <JFXTextField layoutX="118.0" layoutY="408.0" prefHeight="45.0" prefWidth="620.0" promptText="Re-Password" />
+            <JFXTextField fx:id="repass" layoutX="118.0" layoutY="408.0" prefHeight="45.0" prefWidth="620.0" promptText="Re-Password" />
             <JFXComboBox fx:id="status" layoutX="488.0" layoutY="494.0" prefHeight="31.0" prefWidth="116.0" promptText="Status" />
             <JFXComboBox fx:id="gender" layoutX="632.0" layoutY="494.0" prefHeight="31.0" prefWidth="116.0" promptText="Gender" />
             <JFXDatePicker fx:id="birthdate" layoutX="121.0" layoutY="494.0" prefHeight="31.0" prefWidth="340.0" promptText="Birthdate" />
